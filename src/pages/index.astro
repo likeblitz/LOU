@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ScrollingBanner from '../components/ScrollingBanner';
+import HeroSection from '../components/HeroSection';
+import ScrollingImageBar from '../components/ScrollingImageBar';
+import CexPartners from '../components/CexPartners';
+import InfiniteScroll from '../components/InfiniteScroll';
+import HowToBuy from '../components/HowToBuy';
+import Tokenomics from '../components/Tokenomics';
+import ImageSlider from '../components/ImageSlider';
+import Footer from '../components/Footer';
+---
+
+<Layout title="LOU - The Cutest Dog on Solana">
+  <main>
+    <ScrollingBanner client:load />
+    <HeroSection client:only="react" />
+    <ScrollingImageBar client:load />
+    <CexPartners client:load />
+    <InfiniteScroll client:load />
+    <HowToBuy client:load />
+    <Tokenomics client:load />
+    <ImageSlider client:only="react" />
+    <Footer client:load />
+  </main>
+</Layout>
